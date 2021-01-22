@@ -7,7 +7,7 @@ public class HamsterAnimation : MonoBehaviour
 
     private bool facingRight = false;
 
-    void Update()
+    void FixedUpdate()
     {
         if (Input.GetKey("d"))
         {

@@ -16,15 +16,15 @@ public class click_single_player : MonoBehaviour
     }
 
     // Fades to black
-    void Update()
+    void FixedUpdate()
     {
         if (clicked)
         {
-            color.a += 0.001f;
+            color.a += 0.01f;
             gameObject.GetComponent<Renderer>().material.color = color;
 
             frames++;
-            if (frames >= 1000)
+            if (frames >= 100)
                 SceneManager.LoadScene("Playground");
         }
     }
