@@ -4566,8 +4566,14 @@ PrefabInstance:
     - target: {fileID: 814514887027762100, guid: e750fddde67cfc7428b962900c34fe0c,
         type: 3}
       propertyPath: Mute
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 814514887027762100, guid: e750fddde67cfc7428b962900c34fe0c,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 5382777bcc4803b849685a8c51c9f3c4,
+        type: 2}
     - target: {fileID: 814514887027762101, guid: e750fddde67cfc7428b962900c34fe0c,
         type: 3}
       propertyPath: m_Name

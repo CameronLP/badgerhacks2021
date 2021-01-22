@@ -26,7 +26,7 @@ public class LevelEnd : MonoBehaviour
 
             frames++;
             if (frames >= 100)
-                SceneManager.LoadScene("MainMenu");
+                SceneManager.LoadScene("SpaceStation");
         }
     }
 }
