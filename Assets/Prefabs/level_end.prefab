@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 4532099793743625021}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 39.5, y: -10, z: 0}
-  m_LocalScale: {x: 1.74, y: 0.01, z: 1}
+  m_LocalScale: {x: 1.5, y: 0.01, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -187,3 +187,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameObject: {fileID: 2638831051151237559, guid: 01e509b5330226e4a8712008a2e26a70,
     type: 3}
+  fade_menu: {fileID: 0}
