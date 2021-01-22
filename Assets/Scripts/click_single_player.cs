@@ -3,6 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class click_single_player : MonoBehaviour
 {
+    public new GameObject gameObject;
+
     private bool clicked = false;
     private int frames = 0;
     private Color color;
