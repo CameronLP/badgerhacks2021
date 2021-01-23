@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SpaceStation.unity
     guid: 096017a1002f62941ba1053b11390cf3
+  - enabled: 1
+    path: Assets/Scenes/Multiplayer.unity
+    guid: 2ddad91527f19a449a4dda6ff7053aec
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: f53211b79359b344d9ea90fa34028d3f,
       type: 2}

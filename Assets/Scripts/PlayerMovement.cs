@@ -17,21 +17,43 @@ public class PlayerMovement : MonoBehaviour
     private InputAction r;
     private InputAction j;
 
+    public bool SinglePlayer;
+    public bool P2;
+
     private void Awake()
     {
         var gameplayActionMap = playerControls.FindActionMap("Player");
 
-        l = gameplayActionMap.FindAction("Left");
-        l.performed += ctx => Left();
-        l.canceled += ctc => LeftCancelled();
+        // Multiplayer
+        if (!P2 || SinglePlayer)
+        {
+            l = gameplayActionMap.FindAction("Left");
+            l.performed += ctx => Left();
+            l.canceled += ctc => LeftCancelled();
 
-        r = gameplayActionMap.FindAction("Right");
-        r.started += ctx => Right();
-        r.canceled += ctc => RightCancelled();
+            r = gameplayActionMap.FindAction("Right");
+            r.started += ctx => Right();
+            r.canceled += ctc => RightCancelled();
 
-        j = gameplayActionMap.FindAction("Jump");
-        j.performed += ctx => Jump();
-        j.canceled += ctc => JumpCancelled();
+            j = gameplayActionMap.FindAction("Jump");
+            j.performed += ctx => Jump();
+            j.canceled += ctc => JumpCancelled();
+        }
+        
+        if (P2 || SinglePlayer)
+        {
+            l = gameplayActionMap.FindAction("LeftP2");
+            l.performed += ctx => Left();
+            l.canceled += ctc => LeftCancelled();
+
+            r = gameplayActionMap.FindAction("RightP2");
+            r.started += ctx => Right();
+            r.canceled += ctc => RightCancelled();
+
+            j = gameplayActionMap.FindAction("JumpP2");
+            j.performed += ctx => Jump();
+            j.canceled += ctc => JumpCancelled();
+        }
 
     }
 
