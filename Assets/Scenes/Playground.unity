@@ -270,6 +270,37 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2638831051259658832}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &179938280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179938279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: c6b9cf523cefaed4da3dfb2a339f50d8,
+    type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!4 &179938281 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2638831051151237561, guid: 01e509b5330226e4a8712008a2e26a70,
@@ -2074,6 +2105,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 814514887027762100, guid: e750fddde67cfc7428b962900c34fe0c,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 814514887027762100, guid: e750fddde67cfc7428b962900c34fe0c,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7a2321a561cea76498158464f9e5ce4b, type: 3}
     - target: {fileID: 814514887027762101, guid: e750fddde67cfc7428b962900c34fe0c,
         type: 3}
       propertyPath: m_Name
@@ -2580,6 +2621,12 @@ PrefabInstance:
       propertyPath: movementForce
       value: 2000
       objectReference: {fileID: 0}
+    - target: {fileID: 2638831051151237564, guid: 01e509b5330226e4a8712008a2e26a70,
+        type: 3}
+      propertyPath: playerControls
+      value: 
+      objectReference: {fileID: -944628639613478452, guid: c6b9cf523cefaed4da3dfb2a339f50d8,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01e509b5330226e4a8712008a2e26a70, type: 3}
 --- !u!1 &2652976091629954414 stripped
@@ -2917,6 +2964,12 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 22a2dc709573f1a48920311edf676ee9,
+        type: 3}
+    - target: {fileID: 4772340914974895957, guid: e7f9417e85ef9aa499f560310a8cef92,
+        type: 3}
+      propertyPath: playerControls
+      value: 
+      objectReference: {fileID: -944628639613478452, guid: c6b9cf523cefaed4da3dfb2a339f50d8,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7f9417e85ef9aa499f560310a8cef92, type: 3}
