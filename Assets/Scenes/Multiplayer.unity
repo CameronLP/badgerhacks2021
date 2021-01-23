@@ -198,8 +198,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpaceStationMap
       objectReference: {fileID: 0}
+    - target: {fileID: 4769401301582655387, guid: f533b955b928b3c43a56366a7a6e7911,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5765637443598635505, guid: f533b955b928b3c43a56366a7a6e7911,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f533b955b928b3c43a56366a7a6e7911, type: 3}
+--- !u!82 &391376462 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5765637443598635505, guid: f533b955b928b3c43a56366a7a6e7911,
+    type: 3}
+  m_PrefabInstance: {fileID: 391376461}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &391376463 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4769401301582655387, guid: f533b955b928b3c43a56366a7a6e7911,
+    type: 3}
+  m_PrefabInstance: {fileID: 391376461}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1038780629
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -212,6 +234,11 @@ PrefabInstance:
       propertyPath: fade_menu
       value: 
       objectReference: {fileID: 1038780631}
+    - target: {fileID: 3627679777997301665, guid: 75d3e8f4acf859e4b8f6f635fcbb413d,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 391376463}
     - target: {fileID: 3627679777997301666, guid: 75d3e8f4acf859e4b8f6f635fcbb413d,
         type: 3}
       propertyPath: pInput
@@ -469,6 +496,11 @@ PrefabInstance:
       propertyPath: gameplayActionMap.m_Actions.Array.data[0].m_ExpectedControlType
       value: Button
       objectReference: {fileID: 0}
+    - target: {fileID: 3349428307756536394, guid: c013a08e46909ce4ea60af41d3c03ff9,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 391376462}
     - target: {fileID: 3349428307756536395, guid: c013a08e46909ce4ea60af41d3c03ff9,
         type: 3}
       propertyPath: fade_menu

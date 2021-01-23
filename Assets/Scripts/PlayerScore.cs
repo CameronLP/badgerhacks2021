@@ -6,6 +6,7 @@ public class PlayerScore : MonoBehaviour
     private float pointsP1;
     public GameObject scoreObject;
     private Text t;
+    public AudioSource audioSource;
 
     public void Awake()
     {
@@ -19,6 +20,7 @@ public class PlayerScore : MonoBehaviour
         if (co.tag == "Pellet")
         {
             pointsP1 += 10f;
+            audioSource.Play();
             t.text = pointsP1.ToString();
         }
     }
