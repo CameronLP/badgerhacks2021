@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 99487662418232271}
   - component: {fileID: 3468085766475602395}
   - component: {fileID: 3468085766475602398}
+  - component: {fileID: 5025155252282858216}
   m_Layer: 0
   m_Name: hamster_ball
   m_TagString: Untagged
@@ -184,3 +185,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: {fileID: 0}
+--- !u!114 &5025155252282858216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3468085766475602388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95445586a1e213646bce1ef53175e068, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

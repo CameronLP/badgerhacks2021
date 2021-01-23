@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
 
     public void PlayGame() {
-        SceneManager.LoadScene("Playground");
+        SceneManager.LoadScene("SpaceStation");
     }
 
     public void GotoSettings() {

@@ -17,8 +17,6 @@ public class PlayerMovement : MonoBehaviour
     private InputAction r;
     private InputAction j;
 
-    public GameObject pellet;
-
     private void Awake()
     {
         var gameplayActionMap = playerControls.FindActionMap("Player");
@@ -84,11 +82,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Pellet")
-        {
-            //Physics.IgnoreCollision(collision.collider, collision.collider);
-        }
-
         if (jump)
         {
             Vector2 vForce = new Vector2(0, jumpForce * Time.deltaTime);
