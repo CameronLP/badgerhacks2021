@@ -73,6 +73,14 @@ public class @InputMaster : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Enter"",
+                    ""type"": ""Button"",
+                    ""id"": ""4fc7b84f-2ec0-425c-8bd9-c8c0fa4fddc3"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -218,6 +226,17 @@ public class @InputMaster : IInputActionCollection, IDisposable
                     ""action"": ""RightP2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ec023758-e8df-4c8a-ab46-1edb1f5989a6"",
+                    ""path"": ""<Keyboard>/enter"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Enter"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -233,6 +252,7 @@ public class @InputMaster : IInputActionCollection, IDisposable
         m_Player_LeftP2 = m_Player.FindAction("LeftP2", throwIfNotFound: true);
         m_Player_RightP2 = m_Player.FindAction("RightP2", throwIfNotFound: true);
         m_Player_JumpP2 = m_Player.FindAction("JumpP2", throwIfNotFound: true);
+        m_Player_Enter = m_Player.FindAction("Enter", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -289,6 +309,7 @@ public class @InputMaster : IInputActionCollection, IDisposable
     private readonly InputAction m_Player_LeftP2;
     private readonly InputAction m_Player_RightP2;
     private readonly InputAction m_Player_JumpP2;
+    private readonly InputAction m_Player_Enter;
     public struct PlayerActions
     {
         private @InputMaster m_Wrapper;
@@ -300,6 +321,7 @@ public class @InputMaster : IInputActionCollection, IDisposable
         public InputAction @LeftP2 => m_Wrapper.m_Player_LeftP2;
         public InputAction @RightP2 => m_Wrapper.m_Player_RightP2;
         public InputAction @JumpP2 => m_Wrapper.m_Player_JumpP2;
+        public InputAction @Enter => m_Wrapper.m_Player_Enter;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -330,6 +352,9 @@ public class @InputMaster : IInputActionCollection, IDisposable
                 @JumpP2.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJumpP2;
                 @JumpP2.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJumpP2;
                 @JumpP2.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJumpP2;
+                @Enter.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnEnter;
+                @Enter.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnEnter;
+                @Enter.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnEnter;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -355,6 +380,9 @@ public class @InputMaster : IInputActionCollection, IDisposable
                 @JumpP2.started += instance.OnJumpP2;
                 @JumpP2.performed += instance.OnJumpP2;
                 @JumpP2.canceled += instance.OnJumpP2;
+                @Enter.started += instance.OnEnter;
+                @Enter.performed += instance.OnEnter;
+                @Enter.canceled += instance.OnEnter;
             }
         }
     }
@@ -368,5 +396,6 @@ public class @InputMaster : IInputActionCollection, IDisposable
         void OnLeftP2(InputAction.CallbackContext context);
         void OnRightP2(InputAction.CallbackContext context);
         void OnJumpP2(InputAction.CallbackContext context);
+        void OnEnter(InputAction.CallbackContext context);
     }
 }

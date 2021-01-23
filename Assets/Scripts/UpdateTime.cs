@@ -15,9 +15,11 @@ public class UpdateTime : MonoBehaviour
     private int frames = 0;
     private Color color;
 
+    public GameObject GameOver;         // Game Over
+
     public void Start()
     {
-        timeRemaining = 90;
+        timeRemaining = 5;
         completed = false;
     }
 
@@ -40,12 +42,24 @@ public class UpdateTime : MonoBehaviour
 
         if (completed)
         {
-            color.a += 0.01f;
-            fade_menu.GetComponent<Renderer>().material.color = color;
+            if (frames <= 100)
+            {
+                color.a += 0.01f;
+                fade_menu.GetComponent<Renderer>().material.color = color;
+            }
+
+            if (frames > 100 && frames <= 200)
+            {
+                color.a -= 0.01f;
+                fade_menu.GetComponent<Renderer>().material.color = color;
+            }
 
             frames++;
-            if (frames >= 400)
-                SceneManager.LoadScene("MainMenu");
+
+            if (frames == 100)
+            {
+                Instantiate(GameOver, new Vector3(0, 0, 0), Quaternion.identity);
+            }
         }
     }
 }
