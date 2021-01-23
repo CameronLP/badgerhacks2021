@@ -7,6 +7,7 @@ TagManager:
   - Platform
   - Out Of Bounds
   - Level End
+  - Pellet
   layers:
   - Default
   - TransparentFX
