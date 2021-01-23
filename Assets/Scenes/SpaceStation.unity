@@ -240,6 +240,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e481d9b27a298a34f862cdc7647ea0fd, type: 3}
+--- !u!1 &384808830 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7069469590462437128, guid: 87a63caa784684d4b9472d698300bdff,
+    type: 3}
+  m_PrefabInstance: {fileID: 7069469591956415401}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &452015563 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7069469592309847650, guid: 87a63caa784684d4b9472d698300bdff,
@@ -603,11 +609,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7069469591875655471, guid: 87a63caa784684d4b9472d698300bdff,
+        type: 3}
+      propertyPath: SinglePlayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7069469592309847652, guid: 87a63caa784684d4b9472d698300bdff,
         type: 3}
       propertyPath: time
       value: 
       objectReference: {fileID: 1719337155}
+    - target: {fileID: 7069469592309847652, guid: 87a63caa784684d4b9472d698300bdff,
+        type: 3}
+      propertyPath: fade_menu
+      value: 
+      objectReference: {fileID: 384808830}
     - target: {fileID: 7069469592309847653, guid: 87a63caa784684d4b9472d698300bdff,
         type: 3}
       propertyPath: scoreObject

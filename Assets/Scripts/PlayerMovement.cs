@@ -54,7 +54,6 @@ public class PlayerMovement : MonoBehaviour
             j.performed += ctx => Jump();
             j.canceled += ctc => JumpCancelled();
         }
-
     }
 
     void Left()

@@ -138,9 +138,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 3171834091828421274}
   movementForce: 2000
-  jumpForce: 50000
+  jumpForce: 100000
   playerControls: {fileID: -944628639613478452, guid: c6b9cf523cefaed4da3dfb2a339f50d8,
     type: 3}
+  SinglePlayer: 0
+  P2: 0
 --- !u!114 &3468085766475602395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,3 +199,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95445586a1e213646bce1ef53175e068, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreObject: {fileID: 0}

@@ -197,11 +197,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3627679777997301664, guid: 75d3e8f4acf859e4b8f6f635fcbb413d,
+        type: 3}
+      propertyPath: fade_menu
+      value: 
+      objectReference: {fileID: 1038780631}
     - target: {fileID: 3627679777997301666, guid: 75d3e8f4acf859e4b8f6f635fcbb413d,
         type: 3}
       propertyPath: pInput
       value: 
       objectReference: {fileID: 1038780630}
+    - target: {fileID: 3627679777997301666, guid: 75d3e8f4acf859e4b8f6f635fcbb413d,
+        type: 3}
+      propertyPath: jumpForce
+      value: 50000
+      objectReference: {fileID: 0}
     - target: {fileID: 3627679777997301666, guid: 75d3e8f4acf859e4b8f6f635fcbb413d,
         type: 3}
       propertyPath: gameplayActionMap.m_Id
@@ -296,6 +306,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1038780631 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3627679778822743756, guid: 75d3e8f4acf859e4b8f6f635fcbb413d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1038780629}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2048593141
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -380,6 +396,11 @@ PrefabInstance:
       objectReference: {fileID: 2048593142}
     - target: {fileID: 3349428307756536393, guid: c013a08e46909ce4ea60af41d3c03ff9,
         type: 3}
+      propertyPath: jumpForce
+      value: 50000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3349428307756536393, guid: c013a08e46909ce4ea60af41d3c03ff9,
+        type: 3}
       propertyPath: gameplayActionMap.m_Id
       value: 9578902a-81f0-43b3-a008-4605ddb8504a
       objectReference: {fileID: 0}
@@ -428,6 +449,11 @@ PrefabInstance:
       propertyPath: gameplayActionMap.m_Actions.Array.data[0].m_ExpectedControlType
       value: Button
       objectReference: {fileID: 0}
+    - target: {fileID: 3349428307756536395, guid: c013a08e46909ce4ea60af41d3c03ff9,
+        type: 3}
+      propertyPath: fade_menu
+      value: 
+      objectReference: {fileID: 2048593143}
     - target: {fileID: 3349428307756536397, guid: c013a08e46909ce4ea60af41d3c03ff9,
         type: 3}
       propertyPath: m_Name
@@ -444,6 +470,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 4e3ec79532c59cc41889e29d5d121d09,
         type: 3}
+    - target: {fileID: 3349428308257673984, guid: c013a08e46909ce4ea60af41d3c03ff9,
+        type: 3}
+      propertyPath: P2
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3349428308257673984, guid: c013a08e46909ce4ea60af41d3c03ff9,
         type: 3}
       propertyPath: sprite
@@ -470,3 +501,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2048593143 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3349428307506107175, guid: c013a08e46909ce4ea60af41d3c03ff9,
+    type: 3}
+  m_PrefabInstance: {fileID: 2048593141}
+  m_PrefabAsset: {fileID: 0}
