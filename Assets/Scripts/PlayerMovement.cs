@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
@@ -103,7 +104,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (jump)
+        if ((jump) && (Math.Abs(collision.GetContact(0).normal[0]) < 0.99))
         {
             Vector2 vForce = new Vector2(0, jumpForce * Time.deltaTime);
             rb.AddForce(vForce);

@@ -6,6 +6,7 @@ public class PelletCollision : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D co)
     {
+        // Play sound object
         Destroy(gameObject);
     }
 }
