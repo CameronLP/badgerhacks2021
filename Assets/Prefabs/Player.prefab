@@ -29,7 +29,6 @@ Transform:
   m_Children:
   - {fileID: 7069469590612433975}
   - {fileID: 7069469592309847675}
-  - {fileID: 7069469591875655468}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1090,7 +1089,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7069469591875655468}
   - component: {fileID: 7069469591875655457}
-  - component: {fileID: 7069469591875655470}
   - component: {fileID: 7069469591875655471}
   m_Layer: 0
   m_Name: hamster
@@ -1110,8 +1108,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0}
   m_Children: []
-  m_Father: {fileID: 7069469590365769961}
-  m_RootOrder: 2
+  m_Father: {fileID: 7069469592309847675}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7069469591875655457
 SpriteRenderer:
@@ -1163,20 +1161,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7069469591875655470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7069469591875655469}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e4d13ee1120a74499ea6368041cd061, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 7069469592309847675}
-  offset: {x: 0.05, y: -0.1, z: 10}
 --- !u!114 &7069469591875655471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1193,6 +1177,8 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: c1fce2f38abe1364fbe0da457cfdb5f9, type: 3}
   playerControls: {fileID: -944628639613478452, guid: c6b9cf523cefaed4da3dfb2a339f50d8,
     type: 3}
+  SinglePlayer: 0
+  P2: 0
 --- !u!1 &7069469591889473747
 GameObject:
   m_ObjectHideFlags: 0
@@ -1443,6 +1429,7 @@ GameObject:
   - component: {fileID: 7069469592309847655}
   - component: {fileID: 7069469592309847652}
   - component: {fileID: 7069469592309847653}
+  - component: {fileID: 5571859865930612314}
   m_Layer: 0
   m_Name: hamster_ball
   m_TagString: Untagged
@@ -1460,7 +1447,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 7069469591875655468}
   m_Father: {fileID: 7069469590365769961}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1568,6 +1556,8 @@ MonoBehaviour:
   jumpForce: 50000
   playerControls: {fileID: -944628639613478452, guid: c6b9cf523cefaed4da3dfb2a339f50d8,
     type: 3}
+  SinglePlayer: 0
+  P2: 0
 --- !u!114 &7069469592309847655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1612,6 +1602,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: {fileID: 0}
+  timeRemaining: 0
+  fade_menu: {fileID: 0}
 --- !u!114 &7069469592309847653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1625,3 +1617,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreObject: {fileID: 0}
+--- !u!114 &5571859865930612314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7069469592309847650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a013984c7ac18ff4ab84ef1e448f8c92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 7069469591875655468}

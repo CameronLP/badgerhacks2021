@@ -788,7 +788,6 @@ Transform:
   m_Children:
   - {fileID: 3349428307389831192}
   - {fileID: 3349428307756536404}
-  - {fileID: 3349428308257673987}
   - {fileID: 6420249963804092366}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -809,6 +808,7 @@ GameObject:
   - component: {fileID: 3349428307756536392}
   - component: {fileID: 3349428307756536395}
   - component: {fileID: 3349428307756536394}
+  - component: {fileID: 7365102879131642736}
   m_Layer: 0
   m_Name: hamster_ball
   m_TagString: Untagged
@@ -826,7 +826,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 3349428308257673987}
   m_Father: {fileID: 3349428307553096902}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -934,6 +935,8 @@ MonoBehaviour:
   jumpForce: 50000
   playerControls: {fileID: -944628639613478452, guid: c6b9cf523cefaed4da3dfb2a339f50d8,
     type: 3}
+  SinglePlayer: 0
+  P2: 0
 --- !u!114 &3349428307756536392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -978,6 +981,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: {fileID: 6420249963062997658}
+  timeRemaining: 0
+  fade_menu: {fileID: 0}
 --- !u!114 &3349428307756536394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -991,6 +996,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreObject: {fileID: 7868567662035522161}
+--- !u!114 &7365102879131642736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3349428307756536397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a013984c7ac18ff4ab84ef1e448f8c92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 3349428308257673987}
 --- !u!1 &3349428307847368106
 GameObject:
   m_ObjectHideFlags: 0
@@ -1149,8 +1167,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0}
   m_Children: []
-  m_Father: {fileID: 3349428307553096902}
-  m_RootOrder: 2
+  m_Father: {fileID: 3349428307756536404}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3349428308257673998
 SpriteRenderer:
@@ -1209,7 +1227,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3349428308257673986}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2e4d13ee1120a74499ea6368041cd061, type: 3}
   m_Name: 
@@ -1232,6 +1250,8 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: c1fce2f38abe1364fbe0da457cfdb5f9, type: 3}
   playerControls: {fileID: -944628639613478452, guid: c6b9cf523cefaed4da3dfb2a339f50d8,
     type: 3}
+  SinglePlayer: 0
+  P2: 0
 --- !u!1 &3349428308260812028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1776,7 +1796,7 @@ PrefabInstance:
     - target: {fileID: 1547282500864017932, guid: a6d4c8f4f63ad15429467bef329dbc98,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1547282500864017932, guid: a6d4c8f4f63ad15429467bef329dbc98,
         type: 3}
