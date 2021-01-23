@@ -128,6 +128,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 256959953257952075, guid: f533b955b928b3c43a56366a7a6e7911,
+        type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 256959953257952075, guid: f533b955b928b3c43a56366a7a6e7911,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c6773340cff88114582914aee096dfeb, type: 3}
     - target: {fileID: 638767114696947746, guid: f533b955b928b3c43a56366a7a6e7911,
         type: 3}
       propertyPath: m_RootOrder
@@ -292,6 +302,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MultiPlayer1
       objectReference: {fileID: 0}
+    - target: {fileID: 3627679778822743759, guid: 75d3e8f4acf859e4b8f6f635fcbb413d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75d3e8f4acf859e4b8f6f635fcbb413d, type: 3}
 --- !u!114 &1038780630 stripped
@@ -319,6 +334,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3349428307506107172, guid: c013a08e46909ce4ea60af41d3c03ff9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3349428307553096889, guid: c013a08e46909ce4ea60af41d3c03ff9,
         type: 3}
       propertyPath: m_Name

@@ -445,6 +445,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 256959953257952075, guid: f533b955b928b3c43a56366a7a6e7911,
+        type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 256959953257952075, guid: f533b955b928b3c43a56366a7a6e7911,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c6773340cff88114582914aee096dfeb, type: 3}
     - target: {fileID: 638767113803879543, guid: f533b955b928b3c43a56366a7a6e7911,
         type: 3}
       propertyPath: gameObject
@@ -608,6 +618,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069469590462437131, guid: 87a63caa784684d4b9472d698300bdff,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7069469591875655471, guid: 87a63caa784684d4b9472d698300bdff,
         type: 3}

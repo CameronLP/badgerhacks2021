@@ -44,7 +44,7 @@ public class UpdateTime : MonoBehaviour
             fade_menu.GetComponent<Renderer>().material.color = color;
 
             frames++;
-            if (frames >= 100)
+            if (frames >= 400)
                 SceneManager.LoadScene("MainMenu");
         }
     }
