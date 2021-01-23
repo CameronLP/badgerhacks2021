@@ -19,7 +19,7 @@ public class UpdateTime : MonoBehaviour
 
     public void Start()
     {
-        timeRemaining = 5;
+        timeRemaining = 90;
         completed = false;
     }
 

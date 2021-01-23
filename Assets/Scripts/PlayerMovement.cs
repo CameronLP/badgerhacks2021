@@ -1,13 +1,14 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System;
 
 public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
 
     public float movementForce = 1000f;
-    public float jumpForce = 10000f;
+    public float jumpForce = 12000f;
 
     private bool left;
     private bool right;
@@ -40,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
             j.performed += ctx => Jump();
             j.canceled += ctc => JumpCancelled();
         }
-        
+
         if (P2 || SinglePlayer)
         {
             l = gameplayActionMap.FindAction("LeftP2");
@@ -104,9 +105,26 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if ((jump) && (Math.Abs(collision.GetContact(0).normal[0]) < 0.99))
+        //Keep this for reference:
+        //if ((jump) && (Math.Abs(collision.GetContact(0).normal[0]) < 0.99))
+        //{
+        //    Vector2 vForce = new Vector2(0, jumpForce * Time.deltaTime);
+        //    rb.AddForce(vForce);
+        //}
+
+        if (jump && (left || right))
         {
-            Vector2 vForce = new Vector2(0, jumpForce * Time.deltaTime);
+            Vector2 vForce1 = new Vector2(0, jumpForce * Time.deltaTime);
+            Vector2 vForce2 = new Vector2(collision.GetContact(0).normal[0], collision.GetContact(0).normal[1]);
+            Vector2 vForce = Vector2.Scale(vForce1, vForce2);
+            rb.AddForce(vForce);
+        }
+
+        if (jump && !left && !right)
+        {
+            Vector2 vForce1 = new Vector2(jumpForce * Time.deltaTime, jumpForce * Time.deltaTime);
+            Vector2 vForce2 = new Vector2(collision.GetContact(0).normal[0], collision.GetContact(0).normal[1]);
+            Vector2 vForce = Vector2.Scale(vForce1, vForce2);
             rb.AddForce(vForce);
         }
     }
