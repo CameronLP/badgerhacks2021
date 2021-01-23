@@ -15,7 +15,7 @@ public class MainMenu : MonoBehaviour
     }
 
     public void MultiplayerGame() {
-        // TODO
+        SceneManager.LoadScene("Multiplayer");
     }
     
     public void QuitGame() {
