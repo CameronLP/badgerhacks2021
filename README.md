@@ -6,7 +6,7 @@
 
 ## Installation:
 1. Download or clone the Git project
-2. Run BattleHamsters.exe (Windows) or BattleHamsters.app (MacOS)
+2. Run BattleHamsters.exe (Windows) or BattleHamsters.app (MacOS, right click > Open)
 
 ## Group Members:
 - Cameron P.
