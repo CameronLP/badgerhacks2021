@@ -5,7 +5,8 @@
 ## Demo video: https://www.youtube.com/watch?v=vrfyQ8oMwuw
 
 ## Installation:
-TODO
+1. Download or clone the Git project
+2. Run BattleHamsters.exe (Windows) or BattleHamsters.app (MacOS)
 
 ## Group Members:
 - Cameron P.
