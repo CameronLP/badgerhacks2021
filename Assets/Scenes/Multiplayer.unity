@@ -406,6 +406,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: hamster_ball_p1
       objectReference: {fileID: 0}
+    - target: {fileID: 3627679777997301695, guid: 75d3e8f4acf859e4b8f6f635fcbb413d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3627679777997301695, guid: 75d3e8f4acf859e4b8f6f635fcbb413d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3627679778599199021, guid: 75d3e8f4acf859e4b8f6f635fcbb413d,
         type: 3}
       propertyPath: m_RootOrder
@@ -785,8 +795,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3349428307756536404, guid: c013a08e46909ce4ea60af41d3c03ff9,
         type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3349428307756536404, guid: c013a08e46909ce4ea60af41d3c03ff9,
+        type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3349428307756536405, guid: c013a08e46909ce4ea60af41d3c03ff9,
         type: 3}
